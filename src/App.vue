@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
 
 export default {
   components: {},
@@ -15,7 +14,6 @@ export default {
   },
   created() {},
   methods: {
-    ...mapActions({}),
   },
 };
 </script>
