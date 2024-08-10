@@ -1,32 +1,17 @@
 <!-- App.vue -->
 <template>
   <div class="app">
-    <headerView v-if="!isAuth" />
-    
-    <navbarView v-if="!isAnkiID" />
     <RouterView />
   </div>
 </template>
 
 <script>
-import { defineAsyncComponent } from "vue";
 import { mapGetters, mapActions } from "vuex";
-import headerView from "@/modules/common/headerView.vue";
-import navbarView from "@/modules/common/navbarView.vue";
 
 export default {
-  components: { headerView, navbarView },
+  components: {},
 
   computed: {
-    ...mapGetters({
-      isAuthenticated: "users/isAuthenticated",
-    }),
-    isAuth() {
-      return this.$route.name === "auth";
-    },
-    isAnkiID() {
-      return this.$route.name === "ankiID";
-    },
   },
   created() {},
   methods: {

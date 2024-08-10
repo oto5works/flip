@@ -1,8 +1,0 @@
-{
-  "projects": {
-    "default": "ankitoki",
-    "dev": "ankitoki"
-  },
-  "targets": {},
-  "etags": {}
-}
