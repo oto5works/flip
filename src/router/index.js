@@ -1,17 +1,15 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Flip from '@/views/flip.vue';
-
-const routes = [
-  {
-    path: '/',
-    name: 'Flip',
-    component: Flip,
-  },
-];
+import { createRouter, createWebHashHistory } from "vue-router";
+import flip from "@/views/flip.vue";
 
 const router = createRouter({
-  history: createWebHistory(), // 여기서 createWebHistory()를 사용합니다
-  routes,
+  history: createWebHashHistory(),
+  routes: [
+    {
+      path: "/",
+      name: "flip",
+      component: flip,
+    },
+  ],
 });
 
 export default router;
